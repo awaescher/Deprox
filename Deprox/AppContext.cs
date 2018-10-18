@@ -26,7 +26,7 @@ namespace Deprox
 
 			UpdateIcon();
 
-			_trayIcon.Click += TrayIcon_Click;
+			_trayIcon.MouseClick += TrayIcon_Click;
 
 			//Optional - Add a context menu to the TrayIcon:
 			_contextMenu = new ContextMenuStrip();
@@ -62,10 +62,13 @@ namespace Deprox
 			_trayIcon.Visible = false;
 		}
 
-		private void TrayIcon_Click(object sender, EventArgs e)
+		private void TrayIcon_Click(object sender, MouseEventArgs e)
 		{
-			ProxyController.Toggle();
-			UpdateIcon();
+			if (e.Button == MouseButtons.Left)
+			{
+				ProxyController.Toggle();
+				UpdateIcon();
+			}
 		}
 
 		private void CloseMenuItem_Click(object sender, EventArgs e)
