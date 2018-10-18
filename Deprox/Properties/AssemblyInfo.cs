@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Deprox")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Quick Proxy Suspender")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Andreas Wäscher")]
 [assembly: AssemblyProduct("Deprox")]
-[assembly: AssemblyCopyright("Copyright ©  2018")]
+[assembly: AssemblyCopyright("Andreas Wäscher")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
